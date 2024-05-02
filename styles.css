@@ -1,0 +1,84 @@
+:root{
+    --background-color: #fff;
+    --text-color: #000;
+    --title-color: #000;
+    --banner-color: rgb(45,13,109);
+    --banner-text: rgb(232,171,59);
+    --box-color: #121212;
+    --box-text: #fff;
+
+
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+.dark-mode{
+    background-color:  #121212;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dark-theme{
+    --background-color: #121212;
+    --text-color: #fff;
+    --title-color: #fff;
+    --box-color: #fff;
+    --box-text: #121212;
+    --banner-color: rgb(232,171,59); 
+    --banner-text: rgb(45,13,109);
+}
+
+
+.tabs {
+   animation: rainbow;
+    padding: 0;
+    display: flex;
+    text-align:center;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    animation: rainbow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tab-btn:hover {
+    background-color: #fff;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  .tab-btn, .dark-mode{
+    line-height: 1;
+    font-size: 16px;
+    flex:1;
+  }
+
+
+  @keyframes rainbow {
+    0% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    14.2857% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    28.5714% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    42.8571% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    57.1428% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    71.4285% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    85.7142% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    100% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+  }
