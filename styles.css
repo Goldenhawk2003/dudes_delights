@@ -12,11 +12,27 @@
 
 
 body{
+    align-items: center;
+    
     background-color: whitesmoke;
 }
+h1{
+    color: royalblue;
+    font-size: 50px;
+    align-self: center;
+    display: flex;
+    align-content:center;
+    text-align: center;
+    align-items: center;
+}
 
-
-
+.rotating-macaron, h1{
+    align-self: center;
+    display: flex;
+    align-content:center;
+    text-align: center;
+    align-items: center;
+}
 .dark-mode{
     background-color:  #121212;
     color: #fff;
