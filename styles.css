@@ -12,18 +12,24 @@
 
 
 body{
+  display: flex;;
     align-items: center;
+    text-align: center;
     
     background-color: whitesmoke;
 }
 h1{
     color: royalblue;
     font-size: 50px;
-    align-self: center;
     display: flex;
-    align-content:center;
+    align-self: center;
     text-align: center;
     align-items: center;
+    overflow-y: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    inline-size: auto;
+    margin-top: 20%;
+    
 }
 
 .rotating-macaron, h1{
@@ -57,27 +63,32 @@ h1{
 
 
 .tabs {
-   animation: rainbow;
     padding: 0;
-    display: flex;
+
     text-align:center;
     align-items: center;
+    max-height: 50px;
+    padding-left: 20%;
   }
   
   .tab-btn {
-    animation: rainbow;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     cursor: pointer;
+    background-color: transparent;
+    border-bottom: solid black 1px;
   }
   
   .tab-btn:hover {
     background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
   }
   
   .tab-content {
     padding: 20px;
     text-align: center;
+  
 
   }
 
