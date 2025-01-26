@@ -1,0 +1,72 @@
+/* Header.css */
+
+.header {
+    position: fixed; /* Sticks to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    background-color: #ffe4e1; /* Soft pink background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensures header is on top of other elements */
+    display: flex;
+    justify-content: space-between; /* Align logo and nav links */
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7eb3; /* Vibrant pink color for the logo */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logo a:hover {
+    color: lightblue; /* Softer pink on hover */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem; /* Space between navigation links */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333; /* Neutral text color */
+    padding: 0.5rem 1rem; /* Adds padding for clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav a:hover {
+    background-color: lightblue; /* Highlight background on hover */
+    color: #fff; /* Change text color to white */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack nav links vertically */
+      position: absolute;
+      top: 60px; /* Below the header */
+      right: 10px;
+      background-color: #ffe4e1;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+    }
+  
+    .nav a {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .nav.active {
+      display: flex; /* Show nav on toggle */
+    }
+  }
